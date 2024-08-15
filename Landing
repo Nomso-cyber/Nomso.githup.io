@@ -1,0 +1,54 @@
+echo "# Nomso.githup.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Nomso-cyber/Nomso.githup.io.git
+git push -u origin main
+
+touch index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Landing Page</h1>
+    </header>
+    <main>
+        <p>This is a simple landing page hosted on GitHub Pages.</p>
+    </main>
+    <footer>
+        <p>© 2024 My Name</p>
+    </footer>
+</body>
+</html>
+
+touch styles.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+}
+main {
+    padding: 2em;
+}
+footer {
+    background-color: #f1f1f1;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
